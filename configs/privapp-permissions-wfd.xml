@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-    Copyright 2020, 2021 Sony Corporation
+    Copyright 2020, 2021, 2022 Sony Corporation
 -->
 <permissions>
     <privapp-permissions package="com.sonymobile.tvout.wifidisplay">
@@ -11,7 +11,7 @@
         <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
         <permission name="android.permission.READ_WIFI_CREDENTIAL"/>
         <permission name="android.permission.OVERRIDE_WIFI_CONFIG"/>
-        <permission name="com.sonymobile.permission.WFD_WIFI_SCAN"/>
+        <permission name="android.permission.MANAGE_WIFI_NETWORK_SELECTION"/>
     </privapp-permissions>
 
 </permissions>
