@@ -100,6 +100,7 @@ persist.vendor.audio.fluence.speaker=true
 vendor.voice.path.for.pcm.voip=true
 
 # Bluetooth
+bluetooth.device.default_name=Xperia 10 III
 bluetooth.device.class_of_device=90,2,12
 bluetooth.hardware.power.idle_cur_ma=6
 bluetooth.hardware.power.operating_voltage_mv=3700
@@ -141,7 +142,7 @@ vendor.camera.enable.uvc=true
 
 # Chipset
 ro.soc.manufacturer=QTI
-ro.soc.model=SM8250
+ro.soc.model=SM6350
 
 # Crypto
 ro.crypto.dm_default_key.options_format.version=2

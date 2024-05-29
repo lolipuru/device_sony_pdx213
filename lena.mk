@@ -15,7 +15,15 @@
 #
 
 # Include common vendor stuff
-$(call inherit-product, vendor/sony/pdx213/pdx213.mk)
+$(call inherit-product, vendor/sony/pdx213/pdx213-vendor.mk)
+
+# Boot animation
+TARGET_SCREEN_HEIGHT := 2520
+TARGET_SCREEN_WIDTH := 1080
+
+# Device uses high-density artwork where available
+PRODUCT_AAPT_CONFIG := normal
+PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
 # VNDK
 BOARD_API_LEVEL := 30
@@ -45,6 +53,9 @@ PRODUCT_PACKAGES += \
     SonyLenaSettingsResCommon \
     SonyLenaSystemUIResCommon \
     SonyLenaTelephonyResCommon \
+    SonyPDX213FrameworksRes \
+    SonyPDX213SettingsRes \
+    SonyPDX213SystemUIRes \
     WifiResCommon
 
 # Permissions
@@ -315,6 +326,7 @@ PRODUCT_PACKAGES += \
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
+    android.hidl.manager@1.0 \
     libhidltransport.vendor \
     libhwbinder.vendor
 
@@ -361,7 +373,7 @@ PRODUCT_PACKAGES += \
 
 # Light
 PRODUCT_PACKAGES += \
-    android.hardware.lights-service.sony_edo
+    android.hardware.lights-service.sony_lena
 
 # LiveDisplay
 PRODUCT_PACKAGES += \
